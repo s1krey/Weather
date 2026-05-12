@@ -20,11 +20,11 @@ form.addEventListener('submit', function (e) {
       card.innerHTML = `
         <div class="weather-card">
           <h2>${data.name}, ${data.sys.country}</h2>
-          <p><strong>Температура:</strong> ${Math.round(data.main.temp)}°C</p>
-          <p><strong>Видчуваеться як:</strong> ${Math.round(data.main.feels_like)}°C</p>
-          <p><strong>Погода:</strong> ${data.weather[0].description}</p>
-          <p><strong>Влажнисть:</strong> ${data.main.humidity}%</p>
-          <p><strong>Витер:</strong> ${data.wind.speed} м/с</p>
+          <p><strong>Temperature:</strong> ${Math.round(data.main.temp)}°C</p>
+          <p><strong>Feels like:</strong> ${Math.round(data.main.feels_like)}°C</p>
+          <p><strong>Weather:</strong> ${data.weather[0].description}</p>
+          <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+          <p><strong>Wind:</strong> ${data.wind.speed} м/с</p>
         </div>
       `;
     })
